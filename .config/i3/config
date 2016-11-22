@@ -192,26 +192,28 @@ gaps outer 15
 smart_gaps on
          
 # Bar
-bar {
-  status_command i3blocks -c ~/.config/i3/i3blocks.conf
-
-  colors {
-    separator $base03
-    background $base01
-    statusline $base05
-    #                  border  background text
-    focused_workspace  $base01 $base01    $base07
-    active_workspace   $base01 $base02    $base03
-    inactive_workspace $base01 $base01    $base03
-    urgent_workspace   $base01 $base01    $base08
-  }
-}
+#bar {
+#  status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#
+#  colors {
+#    separator $base03
+#    background $base01
+#    statusline $base05
+#    #                  border  background text
+#    focused_workspace  $base01 $base01    $base07
+#    active_workspace   $base01 $base02    $base03
+#    inactive_workspace $base01 $base01    $base03
+#    urgent_workspace   $base01 $base01    $base08
+#  }
+#}
 
 bindsym $mod+shift+x exec i3lock --color "$base01"
 bindsym $mod+d exec rofi -show run -fg "#B0E670" -bg "#14161F" -hlfg "#14161F" -hlbg "#B0E670" -bc "#14161F" -width 100 -height 900 -padding 400 -location 0 -lines 5 -bw 0 -font "MonacoB 16" -separator-style none -opacity 80
 
 
-exec_always feh --bg-scale /home/tyler/Pictures/wallpaper.jpg
 
 # Custom Execs
 exec xrdb ~/.Xresources
+exec polybar main
+
+exec_always feh --bg-scale /home/tyler/Pictures/wallpaper.jpg
