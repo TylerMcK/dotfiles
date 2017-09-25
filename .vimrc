@@ -1,10 +1,12 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'w0ng/vim-hybrid'
 Plug 'metakirby5/codi.vim'
 Plug 'jreybert/vimagit'
 Plug 'dracula/vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'edkolev/promptline.vim'
+Plug 'miyakogi/seiya.vim'
 
 call plug#end()
 
@@ -12,7 +14,6 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:seiya_auto_enable=1
+
+colorscheme hybrid

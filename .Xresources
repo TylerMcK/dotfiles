@@ -2,6 +2,7 @@ URxvt.font: xft:monospace:size=16
 URxvt.scrollBar: false
 URxvt.transparent: true
 URxvt.shading: 20
+URxvt.letterSpace: 1
 
 *background: #232C31
 *foreground: #C5C8C6

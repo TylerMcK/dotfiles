@@ -1,9 +1,9 @@
-exec i3
+exec startxfce4
 
-exec xrandr --output DP-1 --auto --output DVI-D-0 --auto --right-of DP-1
+exec /opt/urserver/urserver --daemon
 
 polybar main
 
-exec xset s 0
-exec xset s noblank
-exec xset s off
+xset s 0
+xset s noblank
+xset s off
